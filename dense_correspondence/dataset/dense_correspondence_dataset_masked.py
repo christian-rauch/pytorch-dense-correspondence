@@ -12,6 +12,7 @@ import glob
 from PIL import Image
 
 import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'modules'))
 import dense_correspondence_manipulation.utils.utils as utils
 utils.add_dense_correspondence_to_python_path()
 
