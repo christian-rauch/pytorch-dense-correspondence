@@ -85,7 +85,7 @@ def flip_horizontal(images, uv_pixel_positions):
 
 def random_domain_randomize_background(image_rgb, image_mask):
     """
-    Ranomly call domain_randomize_background
+    Randomly call domain_randomize_background
     """
     if random.random() < 0.5:
         return image_rgb
