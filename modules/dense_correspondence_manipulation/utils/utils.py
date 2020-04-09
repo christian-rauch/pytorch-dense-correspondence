@@ -48,7 +48,10 @@ def getDenseCorrespondenceSourceDir():
     return os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 
 def get_data_dir():
-    return os.getenv("DC_DATA_DIR")
+    data_dir = os.getenv("DC_DATA_DIR")
+    if not data_dir:
+        raise UserWarning("Set environment variable 'DC_DATA_DIR' to the path to the data files.")
+    return data_dir
 
 def getPdcPath():
     """
