@@ -45,7 +45,7 @@ def saveToYaml(data, filename, flush=False):
 
 
 def getDenseCorrespondenceSourceDir():
-    return os.getenv("DC_SOURCE_DIR")
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 
 def get_data_dir():
     return os.getenv("DC_DATA_DIR")
