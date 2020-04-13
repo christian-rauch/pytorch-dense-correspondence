@@ -270,7 +270,7 @@ class PixelwiseContrastiveLoss(object):
 
     def non_match_loss_descriptor_only(self, image_a_pred, image_b_pred, non_matches_a, non_matches_b, M_descriptor=0.5, invert=False):
         """
-        Computes the non-match loss, only using the desciptor norm
+        Computes the non-match loss, only using the descriptor norm
         :param image_a_pred:
         :type image_a_pred:
         :param image_b_pred:
